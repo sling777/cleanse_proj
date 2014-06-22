@@ -16,4 +16,8 @@ This Readme.md explains the basics / logic of how the data is cleansed / decorat
 9.  Read the Subject_train data and name the column "subjects"
 10.  Change the subdirectiory to test and repeat steps 7-9 for all of the test data as well.
 11.  Now you have read in all of the test data and train data and provided them with column names.
-12.  
+12.  Now use the indices of column numbers with mean & std to subset and extract only those columns representing mean and standard deviation values - for both train and test data 
+13.  Combine and train and test data sets using rbind command
+14.  Now that you have a combined train and test data in a single data table, aggregate the data by subject and activity and pipe the results into a new data frame called tidy
+15.  Decorate the data in tidy with activity lables and write the data out into a txt file tab limited.
+
