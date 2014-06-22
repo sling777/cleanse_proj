@@ -12,7 +12,7 @@ X_train<-read.table("X_train.txt")
 names(X_train)<-features$V2
 
 y_train<-read.table("y_train.txt")
-names(y_train)<-names(y_train)<-"labels"
+names(y_train)<-"labels"
 
 subject_train<-read.table("subject_train.txt")
 names(subject_train)<-"subjects"
