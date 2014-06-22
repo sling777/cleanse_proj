@@ -1,16 +1,6 @@
-## Loading data fom the URL
-
-temp <- tempfile()
-download.file("http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",temp)
-unzip(temp,exdir=tempdir())
-unlink(temp)
-
-curDir<-getwd()   # save location of the working directory the script was launched from
-setwd(tempdir())
 
 
-## read data
-setwd("UCI HAR Dataset/")
+
 
 features<-read.table("features.txt")["V2"]
 activity_labels<-read.table("activity_labels.txt")["V2"]
